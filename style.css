@@ -779,7 +779,7 @@ body {
     }
     
     .card__img {
-        width: 300px;
+        width: 80%;
         margin: 0 auto;
         margin-bottom: 20px;
         
@@ -939,6 +939,7 @@ body {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         grid-gap: 0;
     }
+    
 
     .gallery__container img {
         width: 330px;
@@ -1017,10 +1018,15 @@ body {
     
 }
 
+
 @media screen and (max-width: 400px) {
 
     .sectur__img {
         width: 200px;
+    }
+
+    .price {
+        font-size: .8em;
     }
 
     .cards {
