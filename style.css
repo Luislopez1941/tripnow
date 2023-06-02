@@ -185,6 +185,7 @@ body {
 
 .form-select {
     margin-top: 10px;
+    text-align: center;
 }
 
 .mail input {
@@ -693,6 +694,11 @@ body {
 
 
 @media screen and (max-width: 900px) {
+
+    .title__section {
+        color: #f3f4f6;
+        padding-top: 70px;
+    }
     .left {
         display: none;
         
@@ -766,8 +772,6 @@ body {
     }
     
     .section {
-        width: 90%;
-        margin: 0 auto;
         margin-top: 50px;
       
         
@@ -880,6 +884,9 @@ body {
 
 
 @media screen and (max-width: 768px) {
+    .section {
+        background-color: var(--color--blue);
+    }    
     
     .cards {
         display: grid;
