@@ -16,3 +16,6 @@ buttons.forEach(button => {
     delete activeSlide.dataset.active
   })
 })
+
+
+
