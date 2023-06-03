@@ -4,10 +4,9 @@ function openModal(imageUrl) {
 
     modal.style.display = "block";
     modalImage.src = imageUrl;
-}
-
-let modal = document.getElementById("myModal");
-modal.onclick = function () {
-    modal.style.display = "flex";
     
-};
+    modal.onclick = function () {
+        modal.style.display = "none";
+        modalImage.src = "";
+    };
+}
