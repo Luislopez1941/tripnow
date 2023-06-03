@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    
     <title>Promotions</title>
 </head>
 <body>
@@ -37,8 +39,8 @@
                                 <h3>FOR MORE INFORMATION</h3>
                             </div>
                             <div class="name content">
-                                <label for="">Name</label>
-                                <input placeholder="Full name" type="text">
+                                <label for="" class="name">Name</label>
+                                <input id="input__name" placeholder="Full name" type="text">
                             </div>
                             <div class="mail">
                                 <label for="">Mail</label>
@@ -64,7 +66,7 @@
                                 <textarea placeholder="Comments" ></textarea>
                             </div>
                             <div class="btn">
-                                <button>SEND</button>
+                                <button id="btn">SEND</button>
                             </div>
                         </div>
                         
@@ -174,34 +176,43 @@
                             <h3>Sandos Caracol</h3>
                         </div>
                         <div class="riviera__maya">
-                            <h3>Sandos playacar</h3>
+                            <h3>Sandos Playacar</h3>
                         </div>
                         <div class="playa__carmen">
-                            <h3>Finisterra</h3>
+                            <h3>Sandos Finisterra</h3>
                         </div>
                     </div>
                 </div>
             </div>
            
         </section>
-        <section class="gallery">
-            <h2 class="text">Our gallery</h2>
-            <div class="gallery__container">
-                <img src="./assets/main/imagnes/imagen1.jpg" onclick="openModal('./assets/main/imagnes/imagen1.1.png')" alt="Imagen 1">
-                <img src="./assets/main/imagnes/imagen2.jpg" onclick="openModal('./assets/main/imagnes/imagen2.2.png')" alt="Imagen 2">
-                <img src="./assets/main/imagnes/imagen3.jpg" onclick="openModal('./assets/main/imagnes/imagen3.3.png')" alt="Imagen 3">
-                <img src="./assets/main/imagnes/imagen4.jpg" onclick="openModal('./assets/main/imagnes/imagen4.4.png')" alt="Imagen 3">
-                <img src="./assets/main/imagnes/imagen5.jpg" onclick="openModal('./assets/main/imagnes/imagen5.5.png')" alt="Imagen 3">
-                <img src="./assets/main/imagnes/imagen6.jpg" onclick="openModal('./assets/main/imagnes/imagen6.6.png')" alt="Imagen 3">
-                <img src="./assets/main/imagnes/imagen7.jpg" onclick="openModal('./assets/main/imagnes/imagen7.7.png')" alt="Imagen 3">
-               
+        <section class="section__carruceel" aria-label="Newest Photos">
+            <div class="carousel" data-carousel>
+              <button class="carousel-button prev" data-carousel-button="prev"><box-icon name='chevron-left'></box-icon></button>
+              <button class="carousel-button next" data-carousel-button="next"><box-icon name='chevron-right' ></box-icon></button>
+              <ul data-slides>
+                <li class="slide" data-active>
+                  <img src="./assets/main/imagnes/imagen1.jpg" alt="Nature Image #1">
+                </li>
+                <li class="slide">
+                  <img src="./assets/main/imagnes/imagen2.jpg" alt="Nature Image #2">
+                </li>
+                <li class="slide">
+                  <img src="./assets/main/imagnes/imagen3.jpg" alt="Nature Image #3">
+                </li>
+                <li class="slide">
+                    <img src="./assets/main/imagnes/imagen4.jpg" alt="Nature Image #3">
+                  </li>
+                  <li class="slide">
+                    <img src="./assets/main/imagnes/imagen5.jpg" alt="Nature Image #3">
+                  </li>
+                  <li class="slide">
+                    <img src="./assets/main/imagnes/imagen6.jpg" alt="Nature Image #3">
+                  </li>
 
+              </ul>
             </div>
-        
-            <div id="myModal" class="modal">
-                <img class="modal-content" id="modalImage">
-            </div>
-        </section> 
+          </section>
         <section class="ratings">
             <h2 class="text">Our travelers' experiences</h2>
             <div class="ratings__container">
@@ -345,5 +356,8 @@
     </footer>
     <script src="./script.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   
 </body>
 </html>
