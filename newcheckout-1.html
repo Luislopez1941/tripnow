@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/newcheckout-1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6229d67697.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+
+        :root {
+            --color-blue: #00348C;
+            --color-grey: #707070;
+            --color-white: #F8F8F8;
+            --color-slime-green: #00B300;
+            --color-cream: #F2E6CE;
+            --color-yellow: #FFC107;
+            --color-danger: #FF3E3E;
+        }
+
+        .text-blue {
+            color: var(--color-blue);
+        }
+
+        body {
+            background-color: #F8F8F8;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        
+
+        .text-blue {
+            color: var(--color-blue);
+
+        }
+
+        .background-blue {
+            background-color: var(--color-blue);
+
+        }
+
+        .text-grey {
+            color: var(--color-grey);
+
+        }
+
+        .text-white {
+            color: var(--color-white);
+
+        }
+        .text-slime-green {
+            color: var(--color-slime-green);
+
+        }
+
+        .text-cream {
+            color: var(--color-cream);
+
+        }
+        .text-yeloww {
+            color: var(--color-yellow);
+
+        }
+
+        .background-danger {
+            background-color: var(--color-danger);
+        }
+
+        .box-shadow {
+            box-shadow: 0px 10px 38px -3px rgba(0,0,0,0.1);
+        }
+
+
+        .logo__tripnow {
+            width: 150px;
+        }
+
+        .box-shadow {
+            box-shadow: 0px 10px 38px -3px rgba(0,0,0,0.1);
+        }
+
+        
+        .btn__hero {
+            border: solid 2px var(--color-blue);
+            padding: 10px 20px;
+            
+        }
+
+        .btn__hero:hover {
+            transform: scale(1.12);
+            transition: 400ms;
+            background-color: var(--color-blue);
+            color: var(--color-yellow);
+        }
+        .btn__hero:active {
+            transform: scale(1);
+            transition: 400ms;
+            
+        }
+
+        .btn__hero:hover .bxs-left-arrow {
+            color: var(--color-yellow);
+            transition: 400ms;
+        }
+
+
+        .offers {
+            margin: 50px 0 80px 0;
+        }
+
+        .title__form {
+            
+            transform: scale(.9);
+        }
+        .title__form h6 {
+            padding-top: 10px;
+            
+        }
+
+       
+        .form input {
+            text-indent: 20px;
+            padding: 10px 0;
+            border: solid 1px #707070;
+        }
+
+        .form input:focus {
+            outline: solid 1px #707070;
+        }
+
+        .cronometro {
+            width: 40px;
+            color: #100DDE;
+        }
+
+        .setime {
+            background-color: #F8F8F8;
+            border-radius: 70px;
+            margin: 0 auto;
+            box-shadow: 0px 10px 38px -3px rgba(0,0,0,0.1);
+            
+        }
+
+        .setime h4 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--color-grey);
+        }
+        .setime h3 {
+            font-size: 2.3rem;
+            font-weight: 700;
+            color: var(--color-blue);
+        }
+
+        .img__lock {
+            width: 25px;
+            margin-right: 10px;
+        }
+
+
+        .text-pay {
+            background-color: var(--color-blue);
+            color: var(--color-white);
+            
+        }
+        .form__payments {
+            box-shadow: 0px 10px 38px -3px rgba(0,0,0,0.1);
+        }
+        .how__pay {
+            display: flex;
+          
+            height: 100%;
+            align-items: center;
+
+        }
+
+        .how__pay i {
+            color: var(--color-yellow);
+            margin-right: 12px;
+        }
+
+        .how__pay h6 {
+            margin-top: 6px;
+        }
+
+
+    
+
+        .pay:hover {
+            transform: scale(1.12);
+            transition: 400ms;
+        }
+        .pay:active {
+            transform: scale(1);
+            transition: 400ms;
+            
+        }
+
+       
+
+
+
+
+
+
+        .item {
+            display: flex;
+            background-color: var(--color-blue);
+            padding: 10px;
+            height: 70px;
+            align-items: center;
+            color: #F8F8F8;
+            list-style: none;
+            border: solid 1.5px var(--color-grey);
+            cursor: pointer;
+        }
+        .one {
+            border-radius: 20px 0 0 20px;
+        }
+        .four {
+            border-radius: 0 20px 20px 0;
+        }
+
+
+
+        .items {
+            justify-content: space-around;
+            padding-left: 0;
+            font-size: .9rem;
+
+        }
+
+        .crow__paradise-bed {
+            width: 90%;
+        }
+
+        .text__crow-paradise h6 {
+            font-size: 0.9rem;
+        }
+        
+        .text-pays {
+            height: max-content;
+        }
+
+        .img__items-pay {
+        }
+
+        .img__items-pay img {
+            width: 30px;
+        }
+
+        .img__items-pay img:hover {
+            transition: 500ms;
+            transform: scale(1.2);
+        }
+        .text__container-pay {
+            box-shadow: 0px 10px 38px -3px rgba(0,0,0,0.1);
+            border: solid 2px var(--color-grey);
+            transform: scale(.9);
+        }
+
+        .banner__cream {
+            background-color: var(--color-cream);
+        }
+
+        .banner__slime-green {
+            background-color: var(--color-slime-green);
+            color: var(--color-white);
+        }
+        .items-check {
+            display: flex;
+            height: 40px;
+            align-items: center;
+            
+            
+        }
+
+        .items-check i {
+            font-size: 1.2rem;
+        }
+
+        .items-check p {
+            margin: 1px 0 0 7px;
+        }
+
+        .policy__information {
+            font-size: .9rem;
+            text-align: right;
+        }
+
+        .pay__later {
+            font-size: .9rem;
+            text-align: right;
+        }
+
+        .additional__information {
+            text-align: right;
+        }
+
+        .per__night {
+            background-color: var(--color-blue);
+            color: var(--color-white);
+            border-radius: 20px;
+        }
+        
+
+        @media screen and (max-width: 992px) {
+         
+            .item {
+            width: 150px;
+            border-radius: 5px;
+            
+
+            }
+            .text-pays {
+            font-size: .9rem;
+        }
+        .pay {
+            animation: scaleAnimation 800ms ease-in-out infinite alternate; /* Animación automática */
+            }
+
+            @keyframes scaleAnimation {
+            0% {
+                transform: scale(1); /* Tamaño normal al inicio de la animación */
+            }
+            100% {
+                transform: scale(1.1); /* Tamaño escalado al final de la animación */
+            }     
+        }
+        
+        
+        }
+
+        @media screen and (max-width: 768px) {
+            .logo__tripnow {
+            width: 120px;
+        }
+            .text-hero h6 {
+            font-size: .8rem;
+
+        }
+
+        .item {
+            border-radius: 5px;
+        }
+       
+        
+        
+        
+        }
+
+        @media screen and (max-width: 576px) {
+            .logo__tripnow {
+            width: 120px;
+        }
+            .text-hero h6 {
+            font-size: .8rem;
+
+        }
+        
+        .banner__hero {
+            font-size: .9rem;
+           
+            
+        }
+        }
+
+        .check__from {
+            padding: auto 20px;
+        }
+
+        
+        
+        @media screen and (max-width: 575px) {
+
+        .item {
+            width: 130px;
+    
+        }
+        }
+
+
+        @media screen and (max-width: 450px) {
+            .logo__tripnow {
+            width: 120px;
+        }
+            .text-hero h6 {
+            font-size: .8rem;
+
+        }
+
+        .text-hero {
+            color: var(--color-blue);
+            
+
+        }
+        .item {
+            width: 110px;
+    
+        }
+
+      
+        }
+
+
+
+
+        
+      
+    </style>
+</head>
+<body class="container">
+    <header class="p-4 ">
+        <nav class="row">
+            <div class="col-xl-12 d-flex justify-content-between align-items-center">
+                <img class="col-xl-6 logo__tripnow" src="./assets/images/Logo-azul-tripnow.png" alt="Logo de la empresa">
+                <div class="col-xl-5 col-sm-6 text-hero text-center">
+                    <h6>¿Alguna duda? Comunícate o escribenos al 800 953</h6>
+                </div>
+            </div>
+        </nav>
+        <div class="py-4">
+            <button class="btn__hero bg-text-white rounded">
+            <i class='text-blue bx bxs-left-arrow' ></i>
+            Regresar
+            </button>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="text-white background-blue rounded p-3">Para continuar con tu reservación, es importante indicar los datos 
+                completos de los huéspedes, así el hotel podrá identificarlos al momento de tu llegada ó Check-in
+                </p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="row">
+            <div class="d-xl-flex d-sm-block">
+                <div class="col-xl-8 col-sm-12">
+                    <div class="col-xl-10 col-sm-12 col-11 mx-auto text-left d-flex justify-content-center align-items-center offers">
+                        <div class="px-4">
+                            <img class="cronometro" src="./assets/images/newchekout/svg/cronometro.svg" alt="reloj">
+                        </div>
+                        <div>
+                            <h6>¡Aprovecha esta oportunidad y aparta tu lugar!</h6>
+                            <small>Aparta hoy con sólo 3,758mxn y congela la tarifa, el resto págalo hasta antes del 29/08/2023</small>
+                        </div>
+                    </div>
+                    <div class="check__from p-4 p-sm-0 ">
+                        <div class="col-xl-9 box-shadow check__from-i col-sm-10 py-4 mt-4 rounded box-shadow mx-auto">
+                            <div class="col-12 d-flex">
+                              <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 d-flex px-4 py-2 rounded background-blue  align-items-center title__form ">
+                                <img class="img__lock" src="./assets/images/newchekout/svg/lock.svg" alt="Icono de candado">
+                                <h6 class="text-white">Aseguremos tu reservación</h6>
+                              </div>
+                            </div>
+                            <form class="col-12 d-flex justify-content-center text-center p-2 form">
+                                <div class="container__form col-12">
+                                  <div class="col-12 d-xl-flex d-lg-flex d-sm-block justify-content-around">
+                                    <input class="col-10 col-xl-5 col-lg-5 col-sm-10 name my-4 rounded" type="text" placeholder="Nombre">
+                                    <input class="col-10 col-xl-5 col-lg-5 col-sm-10 my-4 rounded" type="text" placeholder="Apellido">
+                                  </div>
+                                  <div class="col-12 d-xl-flex d-lg-flex d-sm-block justify-content-around">
+                                    <input class="col-10 col-xl-5 col-lg-5 col-sm-10 my-sm-4 my-4 rounded" type="email" placeholder="@gmail.com">
+                                    <input class="col-10 col-xl-5 col-lg-5 col-sm-10 my-sm-4 my-4 rounded" type="email" placeholder="@gmail.com">
+                                  </div>
+                                </div> 
+                            </form>
+                        </div>
+                        <div class="col-xl-4 col-md-5 col-sm-6 mx-auto mt-5 text-center p-3 rounded background-blue text-white mt-4 checkbox-container">
+                            <input type="checkbox" id="duplicateCheckbox">
+                            <label class="mx-3" for="duplicateCheckbox">Agregar otro Titular</label>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-5">
+                        <div class="col-xl-9 col-sm-10 col-10 mx-auto ">
+                            <h6 class="d-flex p-3 align-items-center justify-content-center rounded text-white background-danger">¡Excelente! Puedes cancerlar GRATIS antes del 31/08/2023</h6>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-sm-10 col-10 mx-auto d-xl-flex d-xl-block box-shadow p-4 rounded mt-5">
+                        <div class="col-xl-6 col-sm-12">
+                            <img class="d-flex mx-sm-auto rounded crow__paradise-bed" src="./assets/images/newchekout/bed-room.jpg" alt="Cama">
+                        </div>
+                        <div class="col-xl-6 col-sm-12 mt-sm-4 text__crow-paradise">
+                            <div class="col-xl-12 ">
+                                <h5><strong>Crown Paradise Club Cancún</strong></h5>
+                                <p>Blvd. Kukulcan Km. 18.5, Zona Hotelera, 77500 Cancún, Q.R.</p>
+                            </div>
+                            <div class="col-12 d-flex ">
+                                <div class="col-3 mt-1">
+                                    <h6>Check In</h6>
+                                    <h6>Check Out</h6>
+                                </div>
+                                <div class="col-9">
+                                    <small>Miercoles, 2 de agosto de 2023</small>
+                                    <small>Jueves, 3 de agosto de 2023</small>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <small class="py-2 my-4 px-3 per__night">1 Noche, 1 Unidad</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-sm-10 col-10 mx-auto p-5 mt-5 rounded form__payments">
+                        <div class="col-xl-6 col-lg-12 col-sm-12 text-pay py-2 px-4 rounded how__pay">
+                            <i class='fs-4 bx bxs-credit-card'></i>
+                            <h6>¿Cómo quieres pagar?</h6>
+                        </div>
+                        <div class="col-xl-12 col-lg-10 d-lg-flex mx-lg-auto mt-4">
+                            <ul class="items col-lg-12 d-flex text-center">
+                                <div class="d-lg-flex col-lg-6">
+                                    <li class="col-lg-6 item one ">Tarjeta de crédito</li>
+                                    <li class="col-lg-6 item mt-lg-0 mt-sm-4 mt-4">Tarjeta de débito</li>
+                                </div>
+                                <div class="d-lg-flex col-lg-6">
+                                    <li class="col-lg-6 item ">Efectivo en Tiendas</li>
+                                    <li class="col-lg-6 item four mt-lg-0 mt-sm-4 mt-4 d-flex aling-intems-center">Depósito o Transferencia</li>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="col-xl-12 col-lg-11 d-flex justify-content-end mt-4">
+                            <h6 class="mt-sm-2 my-4">Aceptamos las siguientes formas de pago</h6>
+                        </div>
+                        <div class="col-xl-12 col-lg-10 mx-lg-auto d-lg-flex d-sm-block">
+                            <h5 class="col-lg-4 col-sm-8 mx-sm-auto mt-sm-4 mt-4 p-3 text-center text-pays background-blue text-white pay rounded">Haz clic aquí para ir a la zona de pago</h5>
+                            <div class="col-lg-8 col-sm-12 d-flex justify-content-end">
+                                <div class="col-lg-12">
+                                    <div class="col-lg-12 img__items-pay d-flex justify-content-end my-3">
+                                        <div class="col-lg-5 col-sm-8 mx-sm-auto d-flex  justify-content-between">
+                                            <img class="col-1" src="./assets/images/newchekout/svg/forma-de-pago-visa.svg" alt="">
+                                            <img class="col-1" src="./assets/images/newchekout/svg/forma-de-pago-mastercard.svg" alt="">
+                                            <img class="col-1" src="./assets/images/newchekout/svg/forma-de-pago-amex.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="p-2 text__container-pay rounded">
+                                        <h6 class="fw-bold">Puedes contar con nosotros</h6>
+                                        <div class="items-check">
+                                            <i class='bx bxs-check-circle' style='color:#00b300'  ></i>
+                                            <p>Usamos transmisiones seguras</p>
+                                        </div>
+                                        <div class="items-check">
+                                            <i class='bx bxs-check-circle' style='color:#00b300'  ></i>
+                                            <p>Protegemos tu información personal</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                            <h6 class="col-9 mx-auto box-shadow p-3 mt-5 rounded banner__hero">Paga el resto en abonos cada 15 o 30 días antes del 29 de Agosto de 2023</h6>
+                    </div>
+                    <div class="col-12 text-center">
+                            <h6 class="col-9 mx-auto p-3 mt-5 rounded banner__cream">¡Compra <strong>SIN RIESGO! Cancela GRATIS </strong>antes del 31/08/2023</h6>
+                    </div>
+                    <div class="col-12 text-center">
+                            <h6 class="col-9 mx-auto p-3 mt-5 rounded banner__slime-green">PAGAR AHORA Y APARTAR MI RESERVACIÓN</h6>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-12">
+                    <div class="col-12 mt-5">
+                        <div class="col-lg-10 col-10 p-4 d-flex align-items-center setime">
+                            <h4 class="col-7">La disponibilidad se actualiza en</h4>
+                            <h3 class="col-5 text-center" id="countdown"></h3>
+                        </div>
+                        <div class="col-10 p-4 box-shadow mx-auto rounded mt-5">
+                            <img class="col-12 rounded" src="./assets/images/newchekout/crow-paradise.jpg" alt="Crow Paradise">
+                            <div class="py-4">
+                                <h5>Hotel Crown Paradise</h5>
+                                <div class="d-flex justify-content-between">
+                                    <h5>Club Cancún</h5>
+                                    <div class="fs-5">
+                                        <i class='bx bxs-star' style='color:#ffc107'  ></i>
+                                        <i class='bx bxs-star' style='color:#ffc107'  ></i>
+                                        <i class='bx bxs-star' style='color:#ffc107'  ></i>
+                                        <i class='bx bxs-star' style='color:#ffc107'  ></i>
+                                        <i class='bx bxs-star' style='color:#ffc107'  ></i>
+                                    </div>
+                                    
+                                </div>
+                                <div class="mt-4 d-flex justify-content-between">
+                                    <h6 class="col-3 fw-bold">Incluye</h6>
+                                    <p class="col-8">2 Adultos
+                                        0 Habitación - Habitación
+                                        Estándar Con Vista Al Mar
+                                        Plan: Todo Incluido
+                                        4 días y 3 noches</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="col-3 fw-bold">Entrada</h6>
+                                    <p class="col-8">15 de Sep del 2023 - 03:00 PM</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="col-3 fw-bold">Salida</h6>
+                                    <p class="col-8">18 de Sep del 2023 - 12:00 PM</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="col-3 fw-bold">TOTAL</h5>
+                                    <h2 class="col-6 text-center bg text-blue fw-bold">23,556</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <div class="col-10 mx-auto policy__information">
+                                <p>* Al reservar este servicio acepto que he
+                                    leído y estoy de acuerdo con las <strong class="text-blue">políticas de
+                                    reservación y privacidad del sitio.</strong> </p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="col-10 mx-auto pay__later">
+                                <p>Aparta tu lugar pagando 3,759 mxn y
+                                    cubre el resto después</p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="col-10 mx-auto additional__information">
+                                <h6>Recuerda que tienes</h6>
+                                <h5 class="text-blue"><strong>CANCELACIÓN GRATUITA</strong></h5>
+                                <h6><strong>hasta el 31/08/2023</strong></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+  // Función para calcular el tiempo restante
+  function calculateCountdown(endDate) {
+    const now = new Date().getTime();
+    const endTime = new Date(endDate).getTime();
+    const timeRemaining = endTime - now;
+
+    return timeRemaining;
+  }
+
+  // Función para actualizar el contador cada segundo
+  function updateCountdown(endDate) {
+    const countdownElement = document.getElementById('countdown');
+
+    const interval = setInterval(function() {
+      const timeRemaining = calculateCountdown(endDate);
+
+      if (timeRemaining > 0) {
+        const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+        countdownElement.innerHTML = `0${minutes}:${seconds}`;
+      } else {
+        clearInterval(interval);
+        countdownElement.innerHTML = "¡Tiempo expirado!";
+      }
+    }, 1000);
+  }
+
+  // Obtener endDate desde el Local Storage
+  const storedEndDate = localStorage.getItem('endDate');
+  const endDate = storedEndDate ? new Date(JSON.parse(storedEndDate)) : null;
+
+  if (endDate && endDate > new Date()) {
+    updateCountdown(endDate);
+  } else {
+    // Establecer la fecha límite para el temporizador a 10 minutos desde la hora actual
+    const now = new Date();
+    const newEndDate = new Date(now.getTime() + 10 * 60 * 1000); // Agregamos 10 minutos en milisegundos
+
+    // Guardar endDate en el Local Storage
+    localStorage.setItem('endDate', JSON.stringify(newEndDate));
+
+    updateCountdown(newEndDate);
+  }
+
+
+
+  const checkbox = document.getElementById("duplicateCheckbox");
+const container = document.querySelector(".check__from");
+const containerToDuplicate = document.querySelector(".check__from-i");
+
+checkbox.addEventListener("change", function () {
+  if (this.checked) {
+    // Duplicar el contenedor completo
+    const clonedContainer = containerToDuplicate.cloneNode(true);
+    container.appendChild(clonedContainer);
+  } else {
+    // Eliminar los contenedores duplicados si el checkbox está desmarcado
+    const duplicatedContainers = document.querySelectorAll(".box-shadow:not(:first-of-type)");
+    duplicatedContainers.forEach((container) => container.remove());
+  }
+});
+
+
+</script>
+
+</body>
+</html>
